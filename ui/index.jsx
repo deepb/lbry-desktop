@@ -201,8 +201,10 @@ function AppWrapper() {
       }
       app.store.dispatch(doUpdateIsNightAsync());
       app.store.dispatch(doDaemonReady());
+      /* < DB
       app.store.dispatch(doBlackListedOutpointsSubscribe());
       app.store.dispatch(doFilteredOutpointsSubscribe());
+      DB > */
 
       const appReadyTime = Date.now();
       const timeToStart = appReadyTime - startTime;
